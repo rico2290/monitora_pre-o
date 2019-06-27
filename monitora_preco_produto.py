@@ -11,7 +11,7 @@ password = 'zecipeskllmocqwc'
 
 def verifica_preco_produto():
     try:
-        print('Tentiva de conectar...')
+        print('Tentativa de conexão...')
         pagina = requests.get(url, headers=cabecalho)
         soup = BeautifulSoup(pagina.content, 'html.parser')
         titulo = (soup.find(id='productTitle').get_text()).strip()
@@ -32,7 +32,7 @@ def verifica_preco_produto():
 
 def enviar_email():
     try:
-        print('Tenttiva de conexão para envio de email...')
+        print('Tentativa de conexão para envio de email...')
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
