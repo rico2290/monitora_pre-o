@@ -1,6 +1,7 @@
 import smtplib, requests, sys
 from bs4 import BeautifulSoup
 from smtplib import SMTPException
+import schedule, time
 
 url = 'https://www.amazon.com.br/dp/B07KQWZTVG/ref=asc_df_B07KQWZTVG1561503600000/\
     ?creative=380333&creativeASIN=B07KQWZTVG&linkCode=asn&tag=zoom1p-20'
@@ -18,10 +19,12 @@ def verifica_preco_produto():
         preco_produto = (soup.find(id='priceblock_ourprice').get_text().strip())
         parte_float = float(soup.find(id='priceblock_ourprice').get_text().strip()[2:7])
         
-
         if (parte_float > 2.000):
-            enviar_email()
+            print('Preço baixou!!!')
             print(' {0} ==> {1} '.format(titulo,preco_produto))
+            enviar_email()
+           
+
     except requests.exceptions.HTTPError as  err:
         print(err)
         sys.exit()
@@ -32,7 +35,6 @@ def verifica_preco_produto():
 
 def enviar_email():
     try:
-        print('Tentativa de conexão para envio de email...')
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
@@ -51,7 +53,9 @@ def enviar_email():
         print('Email enviado com sucesso!!!')
     
     except SMTPException as e:
-        print('Erro: Não foi possível enviar email {}'.format(e.errno))
+        print('Erro: Não foi possível enviar email: {}'.format(e))
     server.quit()
 
 verifica_preco_produto()
+#Executar a cada 2 minuto
+# schedule.every(2).minutes.do(verifica_preco_produto).tag('pesquisa-na-amazon')
