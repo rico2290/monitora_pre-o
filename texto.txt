@@ -1,0 +1,61 @@
+ENERGIA EMPREEND PAGUE MENOS S/A
+AV 7 SETEMBRO, 1214
+AMAZONAS ENERGIA S.A. CENTRO -
+AV7 DE SETEMBRO, 2414 ZONA SUL - CEP 69.005-141 - MANAUS - AM
+CACHOEIRINHA - MANAUS - AM - CEP: 69.005-141 CNPJ 06.626.253/0244-17
+CNPJ: 02.341.467/0001-20 IE: 42156092
+Atendimento: 0800 701 3001 www.amazonasenergia.com
+Ouvidoria: 0800 095 1247 (08 às 18h/Dias úteis) E
+[ Agência Nacional de Energia Elétrica - ANEEL : Fone 167 - Ligação Gratuita de telefones fixos e tarifada na origem para telefones celulares
+   
+ 
+ 
+ 
+   
+Emissão Data Leitura Anterior Data Leitura Atual Data Próxima Leitura Dias de Consumo Apresentação Mês Faturado
+30/07/2019 29/06/2019 31/07/2019 31/08/2019 32 31/07/2019 07/2019
+Cod. Fat. Classe/Subclasse Ligação Poste Forma Faturamento Motivo FD Número FD
+3.1.3.3 Comercial Normal Trifasica C 1313962 Normal
+Medidor Leit Atual Leit. Anterior Constante Fatur. NPL Cons. Medido Cons. Faturado
+Consumo 11154012 20068 14470 1,00000 5 5598 5598
+Histórico kWh Composição da Tarifa ftens Faturados sm Tar. sem Impostos Valor
+06/2019 5110 TUSD (*) 924,12 Consumo 5. ú 0,706060 5.270,02
+05/2019 6146 TE(*) 2.389,29 Contribuiç ública (COSIP) 421,80
+04/2019 5410 Transmissão 176,67
+03/2019 5326 Encargos 462,44
+02/2019 4795 Tributos 1.317,50
+01/2019 5273. irus=Tarta de Uso do Sistema de Diirbuição; TE= art de Energia EMPR
+12/2018 3728
+11/2018 7600 ares
+10/2018 8141
+09/2018 7394
+08/2018 6979
+07/2018 6319
+Média Pis/Pasep - 0,00
+12 meses 6018 Cofins - 0,00
+ 
+Indicadores de Continuidade: 05/2019 I
+ci: 401 - APARECIDA euso:  R$2.54886 
+Meta Mensal Realizado Trimestral Anual 
+DIC 5.79 0,00 11,58 23,16 
+
+FIC 3,48 0,00 6,97 13,95
+DMIC 3,37 0,00 0,00 0,00
+ 
+ 
+=> Tensao Contratada - 220V Faixa Adequada - 200 a 231V
+=> Ligue para 0800 701 3001 e faça opção de vencimento de sua conta 89 10 12 13 15
+=> As informações sobre as condições gerais de fornecimento, tarifas, produtos, serviços prestados e tributos se encontram à
+disposição dos consumidores, para consulta, nos postos de atendimento e na página da internet desta distribuidora.
+ 
+Base de Cálculo Alíquota Valor do ICMS LEE Valor a pis =
+5.270,02 25,00 1.317,50
+Reservado ao Fisco aja Ce 5.691,62 a.
+7F74.42E9.BE6B.8D70.2C3E.9816.4A15. 402A
+LS EIBZONAS conta em Débito futomático
+Banco 237 Agência 2367
+AMAZONAS ENERGIA S.A.
+uc Mês Faturado No. FD TC e - Vencimento Valor a Pagar
+06052290 07/2019 00 8 12/08/2019 R$ 5.691,62
+00056 0 0 91620047000 O 00000000605 6 2290071900:
+om
