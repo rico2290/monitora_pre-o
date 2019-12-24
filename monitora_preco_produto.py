@@ -4,6 +4,8 @@ from smtplib import SMTPException
 import schedule, time
 from dotenv import load_dotenv
 import os 
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 load_dotenv()
 
@@ -12,13 +14,20 @@ cabecalho = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) \
             Gecko/20100101 Firefox/67.0'}
 sender = os.getenv('USR')
 password = os.getenv('PWD')
-receiver = os.getenv('RCV')
+receiver = ['ricardolima@pmenos.com.br', 'serifodebissau@gmail.com','maifaribeiro@hotmail.com'] #os.getenv('RCV')
+
+msg = MIMEMultipart('alternative')
+msg['Subject'] = ''
+msg['From'] = sender
+msg['To'] = receiver
 
 def verifica_preco_produto():
     try:
         print('Obtendo informacoes do produto...')
         pagina = requests.get(url, headers=cabecalho)
         soup = BeautifulSoup(pagina.content, 'html.parser')
+        # msg['Subect'] = soup
+        # print('msg[subject] ',msg['Subect'].encode(encoding='utf-8'))
         titulo = (soup.find(id='productTitle').get_text()).strip()
         #print(titulo)
         preco_produto = (soup.find(id='priceblock_ourprice').get_text().strip())
@@ -54,7 +63,7 @@ def enviar_email(sender, receiver, product_name):
 
       
         subject = 'Corre 🏃🏃‍♀️ o preço baixou 😱' # 
-        body = 'O preço do  {}  baixoooouuuu\n\n acesse 👉 {} '.format(product_name,url) #
+        body = 'O preço do  {}  baixoooouuuu\n\nRb@t - purdan, na trenadu nan pa pudi djudau amanha\n\nacesse 👉 {} '.format(product_name,url) #
         message = '''Subject: {}\n\n{} '''.format(subject, body).encode(encoding='utf-8')
 
         server.sendmail(
@@ -63,6 +72,7 @@ def enviar_email(sender, receiver, product_name):
             msg=message
         )
         print('Email enviado com sucesso!!!')
+        server.quit()
     
     except SMTPException as e:
         print('Erro: Nao foi possível enviar email: {}'.format(e))
